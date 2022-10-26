@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  * {
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    background-color: #101010;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Lora', serif;
+  }
+}
+
+@layer components {
+  .custom-btn {
+    @apply rounded-full text-base py-2 font-medium shadow-sm;
+  }
+  .primary-btn {
+    @apply rounded-md border border-transparent bg-light px-6 py-2 text-base font-medium text-dark shadow-sm;
+  }
+  .outlined-btn {
+    @apply rounded-md border border-transparent border-light px-6 py-2 text-base font-medium text-light shadow-sm;
+  }
+  .section-title {
+    @apply text-light text-2xl font-bold text-center md:text-4xl;
+  }
+  .section-caption {
+    @apply text-obsidian max-w-lg mx-auto text-sm text-center mt-4 md:text-[1rem];
+  }
+  .card {
+    @apply rounded-md bg-dark border border-gray-700 p-6
+  }
+}
