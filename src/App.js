@@ -10,15 +10,11 @@ import MainLayout from 'layouts';
 import React, { useEffect } from 'react';
 import ReactGA from 'react-ga';
 
+ReactGA.initialize(process.env.REACT_APP_GA_CODE);
+
 const App = () => {
   useEffect(() => {
-    ReactGA.initialize(process.env.REACT_APP_GA_CODE);
-    const trackPage = (page) => {
-      ReactGA.set({ page });
-      ReactGA.pageview(page);
-    };
-    const page = window.location.pathname + window.location.search;
-    trackPage(page);
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   return (
