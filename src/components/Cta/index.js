@@ -5,7 +5,7 @@ import withAnimation from 'HOCs/withAnimation';
 
 const Cta = () => {
   return (
-    <section className="p-4 md:my-32">
+    <section className="p-4 my-10 md:my-32">
       <div
         className="w-full mx-auto p-12 rounded-md md:w-7/12 md:rounded-full"
         style={{ background: `url('${patterns}') transparent repeat`, backgroundSize: 'contain' }}>

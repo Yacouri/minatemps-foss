@@ -8,6 +8,7 @@ const variants = {
   hidden: { opacity: 0 }
 };
 
+// Apply reveal animation when a component is wrapped by this HOC
 const withAnimation = (WrappedComponent) => {
   return function animatedBox() {
     const control = useAnimation();

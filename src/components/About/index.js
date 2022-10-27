@@ -35,7 +35,7 @@ const About = () => {
   ));
 
   return (
-    <section className="md:my-32">
+    <section className="my-10 md:my-32">
       <SectionTitle title="Know More" caption="Integer consectetur at eros sed ultrices." />
       <div className="flex flex-col gap-10 w-full mx-auto p-12 md:px-0 md:w-7/12">
         {renderInfos}

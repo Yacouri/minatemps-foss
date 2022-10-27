@@ -32,7 +32,7 @@ const WorkProcess = () => {
   ));
 
   return (
-    <section className="md:my-32">
+    <section className="my-10 md:my-32">
       <SectionTitle title="More Services To" />
       <SectionTitle
         title="Reach Your Audience"

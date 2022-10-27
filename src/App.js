@@ -12,16 +12,14 @@ import React from 'react';
 const App = () => {
   return (
     <MainLayout>
-      <div className="App">
-        <Hero />
-        <Thumb />
-        <WorkProcess />
-        <About />
-        <Companies />
-        <Testimonials />
-        <Cta />
-        <Faqs />
-      </div>
+      <Hero />
+      <Thumb />
+      <WorkProcess />
+      <About />
+      <Companies />
+      <Testimonials />
+      <Cta />
+      <Faqs />
     </MainLayout>
   );
 };

@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero = () => {
   return (
-    <section className="mx-auto max-w-screen-xl pb-4 px-4 sm:px-8 md:my-32">
+    <section className="mx-auto max-w-screen-xl pb-4 px-4 my-10 sm:px-8 md:my-32">
       <div className="text-center space-y-4">
         <h1 className="text-light font-bold text-4xl md:text-7xl">
           Building a digital products
@@ -17,12 +17,8 @@ const Hero = () => {
         </p>
       </div>
       <div className="mt-12 flex flex-col gap-2 justify-center items-center md:flex-row md:gap-6">
-        <button href="javascript:void(0)" className="primary-btn w-full md:w-fit">
-          Get started
-        </button>
-        <button
-          href="javascript:void(0)"
-          className="outlined-btn bg-secondary border-none w-full md:w-fit">
+        <button className="primary-btn w-full md:w-fit">Get started</button>
+        <button className="outlined-btn bg-secondary border-none w-full md:w-fit">
           Discover Services
         </button>
       </div>

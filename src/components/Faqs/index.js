@@ -19,7 +19,7 @@ const Faqs = () => {
   ];
 
   return (
-    <section className="leading-relaxed max-w-screen-xl mx-auto px-4 lg:px-8 md:my-32">
+    <section className="leading-relaxed max-w-screen-xl my-10 mx-auto px-4 lg:px-8 md:my-32">
       <div className="space-y-3 text-center">
         <h1 className="text-light text-3xl font-semibold">Frequently Asked Questions</h1>
         <p className="text-gray-600 max-w-lg mx-auto text-lg">
@@ -28,7 +28,7 @@ const Faqs = () => {
       </div>
       <div className="mt-14 max-w-2xl mx-auto">
         {faqsList.map((item, index) => (
-          <FaqsCard idx={index} faqsList={item} key={index} />
+          <FaqsCard idx={index} faq={item} key={index} />
         ))}
       </div>
     </section>

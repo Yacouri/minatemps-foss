@@ -14,38 +14,38 @@ const Testimonials = () => {
       name: 'Sofie Aeo',
       position: 'CTO - Google',
       img: avatar1,
-      content: 'Actually it was a great experience working with Oweeb.'
+      content: 'Actually it was a great experience working with Minatemps.'
     },
     {
       name: 'Alexa Boo',
       position: 'CEO - LinkedIn',
       img: avatar2,
-      content: 'Actually it was a great experience working with Oweeb.'
+      content: 'Actually it was a great experience working with Minatemps.'
     },
     {
       name: 'John Doe',
       position: 'CTO - Shopify',
       img: avatar3,
-      content: 'Actually it was a great experience working with Oweeb.'
+      content: 'Actually it was a great experience working with Minatemps.'
     },
     {
       name: 'Ahmad',
       position: 'Software Engineer - Spotify',
       img: avatar4,
-      content: 'Actually it was a great experience working with Oweeb.'
+      content: 'Actually it was a great experience working with Minatemps.'
     },
     {
       name: 'Junathan',
       position: 'Tech Lead - Airbnb',
       img: avatar5,
-      content: 'Actually it was a great experience working with Oweeb.'
+      content: 'Actually it was a great experience working with Minatemps.'
     }
   ];
   const renderFeedbacks = feedbacks.map((feedback, index) => (
     <TestimonialCard feedback={feedback} key={index} />
   ));
   return (
-    <section className="px-4 md:my-32">
+    <section className="my-10 px-4 md:my-32">
       <SectionTitle
         title="Our lovely clients"
         caption="feedbacks of some clients that trusted our process"

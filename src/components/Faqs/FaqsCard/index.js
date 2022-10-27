@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import { MinusSmallIcon, PlusSmallIcon } from '@heroicons/react/20/solid';
 
-const FaqsCard = ({ faqsList, idx }) => {
+const FaqsCard = ({ faq, idx }) => {
   const answerElRef = useRef();
   const [state, setState] = useState(false);
   const [answerH, setAnswerH] = useState('0px');
@@ -19,15 +19,12 @@ const FaqsCard = ({ faqsList, idx }) => {
       key={idx}
       onClick={handleOpenAnswer}>
       <p className="text-light cursor-pointer pb-5 flex items-center justify-between text-lg">
-        {faqsList.q}
+        {faq.q}
         {state ? <MinusSmallIcon className="w-8" /> : <PlusSmallIcon className="w-8" />}
       </p>
-      <div
-        ref={answerElRef}
-        className="duration-300"
-        style={state ? { height: answerH } : { height: '0px' }}>
+      <div ref={answerElRef} className="duration-300" style={{ height: state ? answerH : '0px' }}>
         <div>
-          <p className="text-gray-500">{faqsList.a}</p>
+          <p className="text-gray-500">{faq.a}</p>
         </div>
       </div>
     </div>
@@ -37,6 +34,9 @@ const FaqsCard = ({ faqsList, idx }) => {
 export default FaqsCard;
 
 FaqsCard.propTypes = {
-  faqsList: PropTypes.array,
+  faq: PropTypes.shape({
+    q: PropTypes.string,
+    a: PropTypes.string
+  }),
   idx: PropTypes.number
 };

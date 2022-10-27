@@ -16,7 +16,7 @@ const Companies = () => {
   ));
 
   return (
-    <section className="md:my-32">
+    <section className="my-10 md:my-32">
       <SectionTitle title="As featured In" caption="Pellentesque venenatis scelerisque" />
       <p className="text-gray-500 text-center max-w-xl mx-auto leading-relaxed">
         As featured in the following companies

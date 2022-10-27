@@ -9,7 +9,7 @@ const Thumb = () => {
     window.open(url, '_blank');
   };
   return (
-    <section className="my-4 p-4 md:my-32">
+    <section className="my-10 p-4 md:my-32">
       <div className="relative cursor-pointer" onClick={openVideoTab}>
         <img
           className="mx-auto w-auto block transition-all hover:scale-[1.05] md:max-w-6xl"
