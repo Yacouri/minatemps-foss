@@ -1,3 +1,9 @@
+# Ready to use Tech Startup Landing Page
+<img src="./src/assets/images/Minatemps%20-%20thumb.png">
+
+<i>ℹ️ Remember to mention the author when using this template. Copy the owner website and include it on your project. thank you ♥️</i>
+## Live Preview
+🌐 https://minatemps.netlify.app/
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
